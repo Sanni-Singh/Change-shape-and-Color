@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite GB S", serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #EAF4F4;
+
+    .container{
+        width: 400px;
+        border-radius: 15px;
+        background-color: #fff;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0;
+        box-shadow: 0px 0px 51px -5px rgba(77, 77, 77, 1);
+
+        @media screen and (max-width:410px) {
+            width: 90%;
+        }
+        .box{
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #circle{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: white;
+            }
+            #triangle {
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            }
+            #ched{
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            }
+            #parallal{
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            }
+            #diamond{
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            #sqare{
+                width: 70px;
+                height: 70px;
+                background-color: white;
+            }
+            #arrow{
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+            }
+            #rightPoint{
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+            }
+            #leftPoint{
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+            }
+            #frame{
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+            }
+            }
+            #cross{
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+            }
+            #star{
+                width: 70px;
+                height: 70px;
+                background-color: white;
+                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            }
+        }
+
+        .button{
+            display: flex;
+            gap: 2rem;
+            @media screen and (max-width:410px) {
+                flex-direction: column;
+            }
+            button {
+                border: none;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            padding: 10px 2em;
+            color: rgb(217, 176, 255);
+            font-size: 15px;
+            font-weight: bold;
+            background-color: rgb(100, 61, 136);
+            border-radius: 1em;
+            outline: none;
+            
+            position: relative;
+            transition: all 0.3s;
+            }
+
+            button:hover {
+            color: rgb(100, 61, 136);
+            background-color: rgb(217, 176, 255);
+            cursor: pointer;
+            animation: abc 1s linear  1 forwards;
+            position: relative;
+        }
+
+
+    }
+}
+
+@keyframes abc {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    100%{
+        left: 0;
+        top: -3px;
+    }
+}
